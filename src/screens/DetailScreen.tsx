@@ -45,7 +45,7 @@ export const DetailScreen = ( { route, navigation }: Props ) => {
           <Icon
             color="white"
             name="arrow-back-outline"
-            size={ 50 }
+            size={ 40 }
             />
         </TouchableOpacity>
       </View>

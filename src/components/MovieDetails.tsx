@@ -22,8 +22,8 @@ export const MovieDetails = ({ movieFull, cast }: Props) => {
                     color="grey"
                     size={ 16 }
                     />
-                <Text style={{ marginHorizontal: 5 }} >{ movieFull.vote_average }</Text>
-                <Text>
+                <Text style={{ marginHorizontal: 5, color: 'grey' }} >{ movieFull.vote_average }</Text>
+                <Text style={{ color:'grey' }}>
                     - { movieFull.genres.map(g => g.name ).join(', ') }
                 </Text>
             </View>
@@ -32,7 +32,7 @@ export const MovieDetails = ({ movieFull, cast }: Props) => {
             <Text style={{ fontSize: 23, marginVertical: 10, fontWeight: 'bold', color: 'black' }}>
                 Historia
             </Text>
-            <Text style={{ fontSize: 18, marginBottom: 10 }}>
+            <Text style={{ fontSize: 18, marginBottom: 10, color:'black' }}>
                 { movieFull.overview}
             </Text>
 
@@ -40,7 +40,7 @@ export const MovieDetails = ({ movieFull, cast }: Props) => {
             <Text style={{ fontSize: 23, marginVertical: 10, fontWeight: 'bold', color: 'black' }}>
                 Presupuesto
             </Text>
-            <Text style={{ fontSize: 18, marginBottom:10 }}>
+            <Text style={{ fontSize: 18, marginBottom:10, color: 'black' }}>
                 { currencyFormatter.format(movieFull.budget, { code: 'USD'}) }
             </Text>
         </View>
