@@ -17,10 +17,11 @@ export const MovieFlatList = ( { movies, headerTitle }: Props) => {
                 headerTitle && <Text style={{ fontSize: 30, fontWeight: 'bold', marginLeft: 10}}>{ headerTitle }</Text>
             }
             <FlatList
-            data={ movies }
-            renderItem={ ( { item }: any ) => <MoviePoster movie={ item } width={ 140 } height={ 200 }/> }
-            keyExtractor={ ( item ) => item.id.toString() }
-            horizontal={ true }
+                data={ movies }
+                renderItem={ ( { item }: any ) => <MoviePoster movie={ item } width={ 140 } height={ 200 }/> }
+                keyExtractor={ ( item ) => item.id.toString() }
+                horizontal={ true }
+                showsHorizontalScrollIndicator={ false }
             />
         </View>
     );
